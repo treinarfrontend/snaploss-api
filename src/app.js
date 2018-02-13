@@ -16,11 +16,13 @@ const Animal = require('./models/animal');
 
 // Carregar as rotas
 const userRoute = require('./routes/user-route');
+const animalRoute = require('./routes/animal-route');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/users', userRoute);
+app.use('/animal', animalRoute);
 
 
 module.exports = app;
