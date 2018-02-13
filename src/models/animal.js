@@ -3,16 +3,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const schema = new Schema({
-  nome: {
+  name: {
     type: String,
     required: true
   },
-  foto: {
+  photo: {
     type: String,
     required: true,
     trim: true
   },
-  descricao: {
+  description: {
     type: String,
     required: true
   },
